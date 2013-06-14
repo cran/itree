@@ -1,0 +1,18 @@
+This package is based on the code in rpart.  The extensions implemented here
+relate to new methods for growing trees and are achieved primary by
+additions/modifications to rpart's C code for recursive partitioning.  
+Users access this function mostly via the arguments to the itree() function.  
+
+rpart implements many ideas besides just tree-growing, including snipping,
+pruning, plotting etc. For the most part itree inherits these with little to
+no adjustments by virtue of being an extension of rpart.  The help files indicate
+where the functionality is new, adjusted, or the same as compared to rpart.  The
+source code is similarly documented.
+
+As itree copies most of rpart's code the authors of rpart are authors 
+of this package as well.  However, please direct any error reports 
+or other questions about itree maintainer of this package (not rpart's); 
+they are welcome and appreciated.
+ 
+
+

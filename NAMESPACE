@@ -1,0 +1,20 @@
+useDynLib(itree, .registration = TRUE, .fixes = "C_")
+
+export(meanvar, na.itree, path.itree, plotcp, post,
+       printcp, prune, prune.itree, itree, itree.control, rpconvert,
+       rsq.itree, snip.itree, xpred.itree,splitstats,getOOBLoss,estNodeRisk)
+
+importFrom(graphics, plot, text)
+importFrom(stats, model.frame, predict, residuals)
+
+S3method(labels, itree)
+S3method(meanvar, itree)
+S3method(model.frame, itree)
+S3method(plot, itree)
+S3method(post, itree)
+S3method(predict, itree)
+S3method(print, itree)
+S3method(prune, itree)
+S3method(residuals, itree)
+S3method(summary, itree)
+S3method(text, itree)
